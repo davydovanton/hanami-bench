@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+files = Dir['benchmarks/**/*.rb']
+
+files.each do |file|
+  puts '-' * 80
+  puts "Running #{file} benchmark\n"
+
+  GC.start
+  start_time = Time.now
+  before = GC.stat(:total_allocated_objects)
+  system "ruby #{file}"
+  after = GC.stat(:total_allocated_objects)
+  runtime = Time.now - start_time
+
+  puts "Execution time: #{runtime}; Allocated objects: #{after - before}"
+end

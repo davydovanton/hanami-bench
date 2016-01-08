@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'lotusrb',           github: 'lotus/lotus'
+gem 'lotus-utils',       github: 'lotus/utils'
+gem 'lotus-validations', github: 'lotus/validations'
+gem 'lotus-router',      github: 'lotus/router'
+gem 'lotus-controller',  github: 'lotus/controller'
+gem 'lotus-view',        github: 'lotus/view'
+gem 'lotus-model',       github: 'lotus/model'
+gem 'lotus-helpers',     github: 'lotus/helpers'
+gem 'lotus-mailer',      github: 'lotus/mailer'
+gem 'lotus-assets',      github: 'lotus/assets'
