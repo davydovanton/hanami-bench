@@ -2,7 +2,7 @@ require 'rails'
 require 'action_controller/railtie'
 require 'action_view/railtie'
 
-class HomeController < Rails::Application
+class Home < Rails::Application
   routes.append do
     root 'home#index'
   end
@@ -24,9 +24,17 @@ class HomeController < Rails::Application
 end
 
 class HomeController < ActionController::Base
-  prepend_view_path 'views'
   def index
   end
 end
 
-run HomeController.initialize!
+run Home.initialize!
+
+# Running 30s test @ http://localhost:9292
+#   4 threads and 4 connections
+#   Thread Stats   Avg      Stdev     Max   +/- Stdev
+#     Latency     3.79ms    3.03ms  76.43ms   97.23%
+#     Req/Sec   282.46     42.26   404.00     89.17%
+#   33796 requests in 30.05s, 7.06MB read
+# Requests/sec:   1124.59
+# Transfer/sec:    240.53KB
