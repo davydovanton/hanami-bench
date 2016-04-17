@@ -16,3 +16,4 @@ gem 'hanami-assets',      github: 'hanami/assets'
 
 gem 'sinatra'
 gem 'rails'
+gem 'grape'
