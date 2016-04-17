@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'puma'
+
 gem 'hanami',             github: 'hanami/hanami'
 gem 'hanami-utils',       github: 'hanami/utils'
 gem 'hanami-validations', github: 'hanami/validations'
