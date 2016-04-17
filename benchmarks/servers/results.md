@@ -1,3 +1,12 @@
+# Results
+All servers called with puma:
+
+    puma benchmarks/servers/*.ru
+
+For benchmarking I used wrk tool:
+
+    wrk --connections 4 --duration 30 --threads 4 http://localhost:9292
+
 ### Rack
 [Link](https://github.com/davydovanton/hanami-bench/blob/master/benchmarks/servers/rack.ru)
 
