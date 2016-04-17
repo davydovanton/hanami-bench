@@ -5,24 +5,20 @@ module App
   class Test < Grape::API
     version 'v1', using: :header, vendor: 'twitter'
     format :json
-    prefix :api
 
-    resource :statuses do
-      desc ''
-      get :public_timeline do
-        { hello: 'world' }
-      end
+    get '/' do
+      { hello: 'world' }
     end
   end
 end
 
 run App::Test
 
-# Running 30s test @ http://localhost:9292/api/statuses/public_timeline.json
+# Running 30s test @ http://localhost:9292
 #   4 threads and 4 connections
 #   Thread Stats   Avg      Stdev     Max   +/- Stdev
-#     Latency     2.87ms    3.73ms  88.15ms   96.20%
-#     Req/Sec   406.49     72.55   626.00     81.17%
-#   48651 requests in 30.06s, 4.08MB read
-# Requests/sec:   1618.24
-# Transfer/sec:    139.07KB
+#     Latency     3.05ms    6.59ms 147.21ms   98.12%
+#     Req/Sec   428.71     80.90   720.00     81.32%
+#   51248 requests in 30.08s, 4.30MB read
+# Requests/sec:   1703.87
+# Transfer/sec:    146.43KB
