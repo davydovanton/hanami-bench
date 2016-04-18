@@ -120,3 +120,53 @@ Running 30s test @ http://localhost:9292
 Requests/sec:   1124.59
 Transfer/sec:    240.53KB
 ```
+
+### Full hanami app
+#### Api url
+```
+Running 30s test @ http://localhost:9292/api
+  4 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.40ms    8.19ms 168.87ms   96.61%
+    Req/Sec   184.99     41.43   343.00     80.22%
+  22142 requests in 30.10s, 22.22MB read
+Requests/sec:    735.54
+Transfer/sec:    755.69KB
+```
+
+#### Web url
+```
+Running 30s test @ http://localhost:9292/view
+  4 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.47ms    6.54ms 125.30ms   95.79%
+    Req/Sec   173.81     40.26   646.00     81.52%
+  20768 requests in 30.10s, 24.10MB read
+Requests/sec:    689.98
+Transfer/sec:    820.06KB
+```
+
+### Full rails app
+#### Api url
+```
+Running 30s test @ http://localhost:9292/api
+  4 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    11.76ms   11.69ms 217.13ms   95.75%
+    Req/Sec    96.85     21.87   131.00     73.59%
+  11554 requests in 30.07s, 4.18MB read
+Requests/sec:    384.22
+Transfer/sec:    142.21KB
+```
+
+#### Web url
+```
+Running 30s test @ http://localhost:9292/web
+  4 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    75.34ms   28.20ms 400.74ms   92.00%
+    Req/Sec    13.43      5.12    30.00     57.24%
+  1631 requests in 30.08s, 3.33MB read
+Requests/sec:     54.22
+Transfer/sec:    113.20KB
+```
