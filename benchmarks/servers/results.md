@@ -136,14 +136,15 @@ Transfer/sec:    755.69KB
 
 #### Web url
 ```
-Running 30s test @ http://localhost:9292/view
+Running 30s test @ http://localhost:9292/web
   4 threads and 4 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.47ms    6.54ms 125.30ms   95.79%
-    Req/Sec   173.81     40.26   646.00     81.52%
-  20768 requests in 30.10s, 24.10MB read
-Requests/sec:    689.98
-Transfer/sec:    820.06KB
+    Latency     6.70ms    5.42ms  90.15ms   93.64%
+    Req/Sec   164.31     40.27   340.00     73.96%
+  19676 requests in 30.09s, 3.90MB read
+  Non-2xx or 3xx responses: 19676
+Requests/sec:    653.92
+Transfer/sec:    132.83KB
 ```
 
 ### Full rails app
