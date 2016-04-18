@@ -50,6 +50,19 @@ Requests/sec:   2769.71
 Transfer/sec:    500.40KB
 ```
 
+### Sinatra JSON
+[Link](https://github.com/davydovanton/hanami-bench/blob/master/benchmarks/servers/sinatra_json.ru)
+
+```
+Running 30s test @ http://localhost:9292/
+  4 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.23ms    6.98ms 177.23ms   98.09%
+    Req/Sec   689.91    133.71     1.32k    85.48%
+  82417 requests in 30.09s, 14.93MB read
+Requests/sec:   2739.28
+Transfer/sec:    508.28KB
+```
 
 ### Hanami JSON
 [Link](https://github.com/davydovanton/hanami-bench/blob/master/benchmarks/servers/hanami_json.ru)
